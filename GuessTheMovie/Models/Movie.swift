@@ -8,7 +8,7 @@
 import Foundation
 
 struct Movie {
-    let name: String
-    let image: String
-    let wrongAnswers: [String]
+    let name: String // Movie name will always be more than one word
+    let image: String // The local image name
+    let wrongAnswers: [String] // Will always be 3 items
 }

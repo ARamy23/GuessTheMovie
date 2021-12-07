@@ -17,4 +17,3 @@ class ViewController: UIViewController {
         movieImageView.image = UIImage(named: "the-wolf-of-wallstreet.jpg")
     }
 }
-
