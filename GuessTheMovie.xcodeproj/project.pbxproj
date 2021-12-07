@@ -355,7 +355,6 @@
 			children = (
 				04F00333275F70A7006AC82C /* Core */,
 				04F003EA275F70A8006AC82C /* Playground */,
-				03A78CF6265E6D950096CF58 /* Models */,
 			);
 			path = GuessTheMovie;
 			sourceTree = "<group>";
@@ -378,12 +377,12 @@
 			path = GuessTheMovieUITests;
 			sourceTree = "<group>";
 		};
-		03A78CF6265E6D950096CF58 /* Models */ = {
+		03A78CF6265E6D950096CF58 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
 				03A78CF7265E6D950096CF58 /* Movie.swift */,
 			);
-			path = Models;
+			path = "Data Model";
 			sourceTree = "<group>";
 		};
 		04F00333275F70A7006AC82C /* Core */ = {
@@ -391,6 +390,7 @@
 			children = (
 				04F00377275F70A8006AC82C /* Assets.xcassets */,
 				03A78CCC265E6D120096CF58 /* LaunchScreen.storyboard */,
+				03A78CF6265E6D950096CF58 /* Data Model */,
 				04F00337275F70A7006AC82C /* UI */,
 				04F00378275F70A8006AC82C /* Business */,
 				04F003BC275F70A8006AC82C /* Extensions */,
