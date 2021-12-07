@@ -138,6 +138,8 @@
 		04F0046C275F70A8006AC82C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F003E8275F70A8006AC82C /* SceneDelegate.swift */; };
 		04F0046D275F70A8006AC82C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04F003E9275F70A8006AC82C /* Info.plist */; };
 		04F0046E275F70A8006AC82C /* PlaygroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F003EB275F70A8006AC82C /* PlaygroundViewController.swift */; };
+		859EEB71C4871121A2276CBC /* Pods_GuessTheMovieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CB0636321D3870D4309086 /* Pods_GuessTheMovieTests.framework */; };
+		BD419AF16EC9448B3DB72EAA /* Pods_GuessTheMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B3E52CF793E37ABAC13BC9 /* Pods_GuessTheMovie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -292,6 +294,12 @@
 		04F003E8275F70A8006AC82C /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04F003E9275F70A8006AC82C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GuessTheMovie/Core/Info.plist; sourceTree = SOURCE_ROOT; };
 		04F003EB275F70A8006AC82C /* PlaygroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundViewController.swift; sourceTree = "<group>"; };
+		3DB813D934D4A7B8D31570F1 /* Pods-GuessTheMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheMovie.debug.xcconfig"; path = "Target Support Files/Pods-GuessTheMovie/Pods-GuessTheMovie.debug.xcconfig"; sourceTree = "<group>"; };
+		575B38D0B6736B110607DC1F /* Pods-GuessTheMovieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheMovieTests.debug.xcconfig"; path = "Target Support Files/Pods-GuessTheMovieTests/Pods-GuessTheMovieTests.debug.xcconfig"; sourceTree = "<group>"; };
+		66B3E52CF793E37ABAC13BC9 /* Pods_GuessTheMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuessTheMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CB0636321D3870D4309086 /* Pods_GuessTheMovieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuessTheMovieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1E4EDA0DC4ACC0BAC897CD6 /* Pods-GuessTheMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheMovie.release.xcconfig"; path = "Target Support Files/Pods-GuessTheMovie/Pods-GuessTheMovie.release.xcconfig"; sourceTree = "<group>"; };
+		F12AC17D13691BF5A96FDDAB /* Pods-GuessTheMovieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheMovieTests.release.xcconfig"; path = "Target Support Files/Pods-GuessTheMovieTests/Pods-GuessTheMovieTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +307,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD419AF16EC9448B3DB72EAA /* Pods_GuessTheMovie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +315,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				859EEB71C4871121A2276CBC /* Pods_GuessTheMovieTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +328,8 @@
 				03A78CC0265E6D100096CF58 /* GuessTheMovie */,
 				03A78CD7265E6D120096CF58 /* GuessTheMovieTests */,
 				03A78CBF265E6D100096CF58 /* Products */,
+				F14891D212C7BFC07D0E428F /* Pods */,
+				DA7587426A529A7322BA852B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -805,6 +817,27 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		DA7587426A529A7322BA852B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66B3E52CF793E37ABAC13BC9 /* Pods_GuessTheMovie.framework */,
+				A5CB0636321D3870D4309086 /* Pods_GuessTheMovieTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F14891D212C7BFC07D0E428F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DB813D934D4A7B8D31570F1 /* Pods-GuessTheMovie.debug.xcconfig */,
+				C1E4EDA0DC4ACC0BAC897CD6 /* Pods-GuessTheMovie.release.xcconfig */,
+				575B38D0B6736B110607DC1F /* Pods-GuessTheMovieTests.debug.xcconfig */,
+				F12AC17D13691BF5A96FDDAB /* Pods-GuessTheMovieTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -812,6 +845,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03A78CE8265E6D120096CF58 /* Build configuration list for PBXNativeTarget "GuessTheMovie" */;
 			buildPhases = (
+				5A719401724F39F4CB38CF40 /* [CP] Check Pods Manifest.lock */,
 				03A78CBA265E6D100096CF58 /* Sources */,
 				03A78CBB265E6D100096CF58 /* Frameworks */,
 				03A78CBC265E6D100096CF58 /* Resources */,
@@ -829,9 +863,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03A78CEB265E6D120096CF58 /* Build configuration list for PBXNativeTarget "GuessTheMovieTests" */;
 			buildPhases = (
+				320FB8A39B5E2F6B6248F5F7 /* [CP] Check Pods Manifest.lock */,
 				03A78CD0265E6D120096CF58 /* Sources */,
 				03A78CD1265E6D120096CF58 /* Frameworks */,
 				03A78CD2265E6D120096CF58 /* Resources */,
+				5BA40D88A19F8A7B0C0F7230 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -916,6 +952,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		320FB8A39B5E2F6B6248F5F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuessTheMovieTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A719401724F39F4CB38CF40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuessTheMovie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BA40D88A19F8A7B0C0F7230 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuessTheMovieTests/Pods-GuessTheMovieTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuessTheMovieTests/Pods-GuessTheMovieTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GuessTheMovieTests/Pods-GuessTheMovieTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		03A78CBA265E6D100096CF58 /* Sources */ = {
@@ -1204,6 +1304,7 @@
 		};
 		03A78CE9265E6D120096CF58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DB813D934D4A7B8D31570F1 /* Pods-GuessTheMovie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1223,6 +1324,7 @@
 		};
 		03A78CEA265E6D120096CF58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1E4EDA0DC4ACC0BAC897CD6 /* Pods-GuessTheMovie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1242,6 +1344,7 @@
 		};
 		03A78CEC265E6D120096CF58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 575B38D0B6736B110607DC1F /* Pods-GuessTheMovieTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1264,6 +1367,7 @@
 		};
 		03A78CED265E6D120096CF58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F12AC17D13691BF5A96FDDAB /* Pods-GuessTheMovieTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
