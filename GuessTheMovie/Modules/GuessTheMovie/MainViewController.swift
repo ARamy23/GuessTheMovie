@@ -1,13 +1,13 @@
 //
-//  ViewController.swift
-//  CompleteTheMovieTitle
+//  MainViewController.swift
+//  GuessTheMovie
 //
-//  Created by Osama Gamal on 25/05/2021.
+//  Created by Ahmed Ramy on 07/12/2021.
 //
 
-import UIKit
+import Foundation
 
-class ViewController: UIViewController {
+class MainViewController: BaseViewController, HasViewModel {
     @IBOutlet weak var movieImageView: UIImageView!
     @IBOutlet weak var movieTitleLabel: UILabel!
     
@@ -17,4 +17,3 @@ class ViewController: UIViewController {
         movieImageView.image = UIImage(named: "the-wolf-of-wallstreet.jpg")
     }
 }
-

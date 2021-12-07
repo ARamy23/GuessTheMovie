@@ -139,7 +139,11 @@
 		04F0046D275F70A8006AC82C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04F003E9275F70A8006AC82C /* Info.plist */; };
 		04F0046E275F70A8006AC82C /* PlaygroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F003EB275F70A8006AC82C /* PlaygroundViewController.swift */; };
 		04F00471275F72A4006AC82C /* GuessTheMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F00470275F72A4006AC82C /* GuessTheMovieTests.swift */; };
-		04F00473275F74CE006AC82C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F00472275F74CE006AC82C /* ViewController.swift */; };
+		04F00479275F757A006AC82C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F00477275F757A006AC82C /* Main.storyboard */; };
+		04F0047C275F75CB006AC82C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0047B275F75CB006AC82C /* MainViewModel.swift */; };
+		04F0047E275F75D1006AC82C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0047D275F75D1006AC82C /* MainViewController.swift */; };
+		04F00480275F75D9006AC82C /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0047F275F75D9006AC82C /* MainRouter.swift */; };
+		04F00482275F75E7006AC82C /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F00481275F75E7006AC82C /* MainBuilder.swift */; };
 		859EEB71C4871121A2276CBC /* Pods_GuessTheMovieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CB0636321D3870D4309086 /* Pods_GuessTheMovieTests.framework */; };
 		BD419AF16EC9448B3DB72EAA /* Pods_GuessTheMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B3E52CF793E37ABAC13BC9 /* Pods_GuessTheMovie.framework */; };
 /* End PBXBuildFile section */
@@ -297,7 +301,11 @@
 		04F003E9275F70A8006AC82C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GuessTheMovie/Core/Info.plist; sourceTree = SOURCE_ROOT; };
 		04F003EB275F70A8006AC82C /* PlaygroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundViewController.swift; sourceTree = "<group>"; };
 		04F00470275F72A4006AC82C /* GuessTheMovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheMovieTests.swift; sourceTree = "<group>"; };
-		04F00472275F74CE006AC82C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04F00478275F757A006AC82C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		04F0047B275F75CB006AC82C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		04F0047D275F75D1006AC82C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		04F0047F275F75D9006AC82C /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		04F00481275F75E7006AC82C /* MainBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBuilder.swift; sourceTree = "<group>"; };
 		3DB813D934D4A7B8D31570F1 /* Pods-GuessTheMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheMovie.debug.xcconfig"; path = "Target Support Files/Pods-GuessTheMovie/Pods-GuessTheMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		575B38D0B6736B110607DC1F /* Pods-GuessTheMovieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheMovieTests.debug.xcconfig"; path = "Target Support Files/Pods-GuessTheMovieTests/Pods-GuessTheMovieTests.debug.xcconfig"; sourceTree = "<group>"; };
 		66B3E52CF793E37ABAC13BC9 /* Pods_GuessTheMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuessTheMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -350,7 +358,6 @@
 			isa = PBXGroup;
 			children = (
 				04F00474275F74D2006AC82C /* Modules */,
-				04F00472275F74CE006AC82C /* ViewController.swift */,
 				04F00333275F70A7006AC82C /* Core */,
 				04F003EA275F70A8006AC82C /* Playground */,
 			);
@@ -835,6 +842,11 @@
 		04F00475275F74DF006AC82C /* GuessTheMovie */ = {
 			isa = PBXGroup;
 			children = (
+				04F00477275F757A006AC82C /* Main.storyboard */,
+				04F0047B275F75CB006AC82C /* MainViewModel.swift */,
+				04F0047D275F75D1006AC82C /* MainViewController.swift */,
+				04F0047F275F75D9006AC82C /* MainRouter.swift */,
+				04F00481275F75E7006AC82C /* MainBuilder.swift */,
 			);
 			path = GuessTheMovie;
 			sourceTree = "<group>";
@@ -956,6 +968,7 @@
 				04F00419275F70A8006AC82C /* Assets.xcassets in Resources */,
 				03A78CCE265E6D120096CF58 /* LaunchScreen.storyboard in Resources */,
 				04F003FB275F70A8006AC82C /* SF-Pro-Rounded-Bold.otf in Resources */,
+				04F00479275F757A006AC82C /* Main.storyboard in Resources */,
 				04F0046D275F70A8006AC82C /* Info.plist in Resources */,
 				04F00440275F70A8006AC82C /* Localizables.strings in Resources */,
 				04F003FD275F70A8006AC82C /* Poppins-Bold.ttf in Resources */,
@@ -1065,6 +1078,7 @@
 				04F003F1275F70A8006AC82C /* Theme.swift in Sources */,
 				04F00452275F70A8006AC82C /* UITextView+Combine.swift in Sources */,
 				04F003EE275F70A8006AC82C /* Dimensions.swift in Sources */,
+				04F00482275F75E7006AC82C /* MainBuilder.swift in Sources */,
 				04F00434275F70A8006AC82C /* ARError.swift in Sources */,
 				04F00400275F70A8006AC82C /* NavigationBar+Utils.swift in Sources */,
 				04F0042D275F70A8006AC82C /* UserService.swift in Sources */,
@@ -1082,9 +1096,11 @@
 				04F00423275F70A8006AC82C /* ValidationRule.swift in Sources */,
 				04F00445275F70A8006AC82C /* UIImageView+Extensions.swift in Sources */,
 				04F00411275F70A8006AC82C /* TextView.swift in Sources */,
+				04F0047E275F75D1006AC82C /* MainViewController.swift in Sources */,
 				04F0045B275F70A8006AC82C /* UIControlTarget+Combine.swift in Sources */,
 				04F00453275F70A8006AC82C /* UIImageView+Publisher.swift in Sources */,
 				04F00426275F70A8006AC82C /* Adapter.swift in Sources */,
+				04F0047C275F75CB006AC82C /* MainViewModel.swift in Sources */,
 				04F00408275F70A8006AC82C /* ButtonStyle.swift in Sources */,
 				04F00410275F70A8006AC82C /* LoadingButton.swift in Sources */,
 				04F00451275F70A8006AC82C /* NibIdentifiable.swift in Sources */,
@@ -1113,7 +1129,6 @@
 				04F0040C275F70A8006AC82C /* BasicTextField.swift in Sources */,
 				04F00406275F70A8006AC82C /* TextStyles.swift in Sources */,
 				04F0043B275F70A8006AC82C /* LoggersManager.swift in Sources */,
-				04F00473275F74CE006AC82C /* ViewController.swift in Sources */,
 				04F00414275F70A8006AC82C /* PhoneNumberTextField.swift in Sources */,
 				04F0042F275F70A8006AC82C /* UserDefaultsStorage.swift in Sources */,
 				04F00450275F70A8006AC82C /* NSDirectionalEdgeInsets+Extensions.swift in Sources */,
@@ -1149,6 +1164,7 @@
 				04F0043C275F70A8006AC82C /* SystemLogger.swift in Sources */,
 				04F00407275F70A8006AC82C /* Style.swift in Sources */,
 				04F00404275F70A8006AC82C /* UILayoutPriority+Extensions.swift in Sources */,
+				04F00480275F75D9006AC82C /* MainRouter.swift in Sources */,
 				04F00448275F70A8006AC82C /* Date+Extension.swift in Sources */,
 				04F0040F275F70A8006AC82C /* ScrollView.swift in Sources */,
 				04F00467275F70A8006AC82C /* CorePlugin.swift in Sources */,
@@ -1204,6 +1220,14 @@
 				04F003B8275F70A8006AC82C /* ko */,
 			);
 			name = Localizables.strings;
+			sourceTree = "<group>";
+		};
+		04F00477275F757A006AC82C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F00478275F757A006AC82C /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
