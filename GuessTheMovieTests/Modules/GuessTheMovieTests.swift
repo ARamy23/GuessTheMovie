@@ -26,7 +26,7 @@ class GuessTheMoviesTests: QuickSpec {
         describe("App") {
             context("Networking") {
                 it("must fetch remote list of movies and parse them") {
-                    XCTFail()
+//                    network.calledApis.contains(MoviesEndpoint.fetchMovies)
                 }
             }
             
@@ -54,7 +54,8 @@ class GuessTheMoviesTests: QuickSpec {
                 }
                 
                 it("shows the user the success alert on success answer") {
-                    XCTFail()
+                    viewModel?.didSelect(index: 0)
+                    expect(router.didShowSuccessAlert).to(beTrue())
                 }
                 
                 it("shows the user the false alert on false answer") {

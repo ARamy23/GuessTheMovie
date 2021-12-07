@@ -26,7 +26,7 @@
 //
 //
 //  SceneDelegate.swift
-//  ARamy
+//  GuessTheMovie
 //
 //  Created by Ahmed Ramy on 30/11/2021.
 //
@@ -43,7 +43,7 @@ extension SceneDelegate {
     window = UIWindow(windowScene: scene)
     defer { window?.makeKeyAndVisible() }
     guard !isUnitTesting else { return }
-    set(rootViewTo: OnboardingModuleBuilder().build())
+      set(rootViewTo: MainModuleBuilder().build())
   }
 }
 

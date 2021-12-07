@@ -1,10 +1,11 @@
 //
-//  UIViewController+Navigation.swift
-//  ARamy
+//  UIViewController+Extensions.swift
+//  GuessTheMovie
 //
-//  Created by Ahmed Ramy on 30/11/2021.
+//  Created by Ahmed Ramy on 07/12/2021.
 //
 
+import Foundation
 import UIKit
 
 public typealias AlertAction = (title: String, style: UIAlertAction.Style, action: () -> Void)

@@ -88,7 +88,7 @@
 "validation_error_field_must_contain" = "%@ must contain %@.";
 "validation_error_field_can_contain_only" = "%@ can only contain %@.";
 "check_email_forget_password_subtitle" = "We’ve sent a link  to your Email so you can reset your password";
-"check_email_verify_email_subtitle" = "We’ve sent a link  to your Email so you can verify your newly made ARamy ✨ account.";
+"check_email_verify_email_subtitle" = "We’ve sent a link  to your Email so you can verify your newly made GuessTheMovie ✨ account.";
 "check_email_success_message" = "A new Email was sent to your inbox.";
 
 // MARK: - Auth Error Messages

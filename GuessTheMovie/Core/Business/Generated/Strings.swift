@@ -88,7 +88,7 @@ internal enum L10n {
   internal static let checkEmailForgetPasswordSubtitle = L10n.tr("Localizables", "check_email_forget_password_subtitle")
   /// A new Email was sent to your inbox.
   internal static let checkEmailSuccessMessage = L10n.tr("Localizables", "check_email_success_message")
-  /// We’ve sent a link  to your Email so you can verify your newly made ARamy ✨ account.
+  /// We’ve sent a link  to your Email so you can verify your newly made GuessTheMovie ✨ account.
   internal static let checkEmailVerifyEmailSubtitle = L10n.tr("Localizables", "check_email_verify_email_subtitle")
   /// Clear Cache
   internal static let clearCache = L10n.tr("Localizables", "clear cache")

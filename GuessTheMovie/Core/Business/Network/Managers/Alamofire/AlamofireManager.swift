@@ -26,7 +26,7 @@
 //
 //
 //  AlamofireManager.swift
-//  ARamy
+//  GuessTheMovie
 //
 //  Created by Ahmed Ramy on 11/11/2021.
 //
@@ -35,7 +35,6 @@ import Foundation
 import Alamofire
 import Combine
 import Pulse
-import PhoneNumberKit
 
 public final class AlamofireManager: NetworkProtocol {
     public let logger: NetworkLogger = .init()
@@ -154,15 +153,6 @@ public struct ARErrorParser {
         switch error {
         case let urlError as URLError:
             return NetworkErrorToARErrorAdapter().adapt(urlError)
-//        case let googleSignInError as GIDSignInError:
-//            return GIDSignInErrorToARErrorAdapter().adapt(googleSignInError)
-//        case let appleSignInError as ASAuthorizationError:
-//            return ASAuthorizationErrorToARError().adapt(appleSignInError)
-        case let phoneNumberError as PhoneNumberError:
-            return PhoneNumberErrorToARErrorAdapter().adapt(phoneNumberError)
-        // TODO: - Add Facebook
-        case let validationError as ValidationError:
-            return .init(validation: validationError)
         default:
             return error as? ARError ?? .init(code: nil, text: error.localizedDescription)
         }
@@ -194,7 +184,7 @@ public struct ARErrorParser {
     }
 }
 
-extension ARamy.HTTPMethod {
+extension GuessTheMovie.HTTPMethod {
     func toAlamofireFriendly() -> Alamofire.HTTPMethod {
         switch self {
         case .GET:
@@ -205,7 +195,7 @@ extension ARamy.HTTPMethod {
     }
 }
 
-extension ARamy.ParametersEncoding {
+extension GuessTheMovie.ParametersEncoding {
     func toAlamofireFriendly() -> Alamofire.ParameterEncoding {
         switch self {
         case .urlEncoding:
@@ -218,7 +208,7 @@ extension ARamy.ParametersEncoding {
     }
 }
 
-extension ARamy.HTTPHeaders {
+extension GuessTheMovie.HTTPHeaders {
     func toAlamofireFriendly() -> Alamofire.HTTPHeaders {
         .init(map { key, value in
             HTTPHeader(name: key, value: value)

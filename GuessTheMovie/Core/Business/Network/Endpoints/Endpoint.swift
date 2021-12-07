@@ -58,7 +58,7 @@ public extension Endpoint {
     /// Configurations
     var baseURL: String {
         #if DEBUG
-            return "https://api.dev.RamySDK.tech/m/"
+            return "https://gist.githubusercontent.com/i0sa/f5b878c5a35386fda952c350fc53fce9/raw/186811752752d29fbf5ee5418065daa689593ff5/"
         #elseif STAGING
             return "https://api.dev.RamySDK.tech/m/"
         #elseif RELEASE

@@ -26,15 +26,14 @@
 //
 //
 //  BaseViewController.swift
-//  ARamy
+//  GuessTheMovie
 //
 //  Created by Ahmed Ramy on 30/11/2021.
 //
 
 import UIKit
-import Combine
 import PulseUI
-import SnapKit
+import SPIndicator
 
 public protocol HasViewModel {
     associatedtype ViewModelType: ViewModelable
@@ -68,9 +67,7 @@ public class BaseViewController: UIViewController {
     }
 
     open func viewWillAppearOnce() {
-      let baseView = FoundationUIBuilder().build()
-      self.view.addSubview(baseView)
-      baseView.fillSuperview()
+        /* Override in Children when needed */
     }
 
     open func viewDidAppearOnce() {
@@ -79,6 +76,7 @@ public class BaseViewController: UIViewController {
 
     open func showLoadingState(isLoading _: Bool) {
         /* Override in Children when needed */
+        SPIndicator.present(title: "Loading", haptic: .none)
     }
 }
 

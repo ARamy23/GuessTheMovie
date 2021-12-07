@@ -51,10 +51,10 @@ public struct ARError: Error, Codable, Equatable {
         _text = text
     }
 
-    init(validation: ValidationError) {
-        code = nil
-        _text = validation.localizedDescription
-    }
+//    init(validation: ValidationError) {
+//        code = nil
+//        _text = validation.localizedDescription
+//    }
 
     public static func == (lhs: ARError, rhs: ARError) -> Bool {
         lhs.code == rhs.code &&

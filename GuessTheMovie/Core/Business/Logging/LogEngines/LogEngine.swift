@@ -59,7 +59,5 @@ public extension Array where Element == LogEngine {
         PulseLogger.main,
     ]
 
-    static let remote: [Element] = [
-        SentryLogger.main,
-    ]
+    static let remote: [Element] = []
 }

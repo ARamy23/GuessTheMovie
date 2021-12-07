@@ -11,6 +11,8 @@ target 'GuessTheMovie' do
   use_frameworks!
   pod 'SPIndicator'
   pod 'Alamofire'
+  pod 'Kingfisher'
+  pod 'SnapKit'
   
   # Pods for GuessTheMovieTests
 

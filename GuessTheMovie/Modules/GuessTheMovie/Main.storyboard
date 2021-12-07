@@ -90,6 +90,7 @@
                     <connections>
                         <outlet property="movieImageView" destination="eAL-46-1Er" id="c66-TT-3tI"/>
                         <outlet property="movieTitleLabel" destination="Sd8-W8-P3y" id="QbG-Fr-P6p"/>
+                        <outletCollection property="answersButtons" destination="YNz-U7-kfb" collectionClass="NSMutableArray" id="Af9-4I-JVZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYd-AR-gwA" sceneMemberID="firstResponder"/>

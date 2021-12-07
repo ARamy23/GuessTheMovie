@@ -35,17 +35,14 @@ import Foundation
 
 public protocol RepositoryProtocol {
     var network: NetworkProtocol { get set }
-    var cache: CacheProtocol { get set }
 }
 
 public final class Repository: RepositoryProtocol {
-    static var main = Repository(network: AlamofireManager(), cache: CacheManager())
+    static var main = Repository(network: AlamofireManager())
 
     public var network: NetworkProtocol
-    public var cache: CacheProtocol
 
-    init(network: NetworkProtocol, cache: CacheProtocol) {
+    init(network: NetworkProtocol) {
         self.network = network
-        self.cache = cache
     }
 }
