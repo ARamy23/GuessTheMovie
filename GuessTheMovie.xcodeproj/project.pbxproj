@@ -136,7 +136,6 @@
 		04F0046A275F70A8006AC82C /* FirebasePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F003E6275F70A8006AC82C /* FirebasePlugin.swift */; };
 		04F0046B275F70A8006AC82C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F003E7275F70A8006AC82C /* AppDelegate.swift */; };
 		04F0046C275F70A8006AC82C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F003E8275F70A8006AC82C /* SceneDelegate.swift */; };
-		04F0046D275F70A8006AC82C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04F003E9275F70A8006AC82C /* Info.plist */; };
 		04F0046E275F70A8006AC82C /* PlaygroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F003EB275F70A8006AC82C /* PlaygroundViewController.swift */; };
 		04F00471275F72A4006AC82C /* GuessTheMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F00470275F72A4006AC82C /* GuessTheMovieTests.swift */; };
 		04F00479275F757A006AC82C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F00477275F757A006AC82C /* Main.storyboard */; };
@@ -144,6 +143,7 @@
 		04F0047E275F75D1006AC82C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0047D275F75D1006AC82C /* MainViewController.swift */; };
 		04F00480275F75D9006AC82C /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0047F275F75D9006AC82C /* MainRouter.swift */; };
 		04F00482275F75E7006AC82C /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F00481275F75E7006AC82C /* MainBuilder.swift */; };
+		04F00484275F7760006AC82C /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F00483275F7760006AC82C /* Dynamic.swift */; };
 		859EEB71C4871121A2276CBC /* Pods_GuessTheMovieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CB0636321D3870D4309086 /* Pods_GuessTheMovieTests.framework */; };
 		BD419AF16EC9448B3DB72EAA /* Pods_GuessTheMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B3E52CF793E37ABAC13BC9 /* Pods_GuessTheMovie.framework */; };
 /* End PBXBuildFile section */
@@ -306,6 +306,7 @@
 		04F0047D275F75D1006AC82C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04F0047F275F75D9006AC82C /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		04F00481275F75E7006AC82C /* MainBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBuilder.swift; sourceTree = "<group>"; };
+		04F00483275F7760006AC82C /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		3DB813D934D4A7B8D31570F1 /* Pods-GuessTheMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheMovie.debug.xcconfig"; path = "Target Support Files/Pods-GuessTheMovie/Pods-GuessTheMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		575B38D0B6736B110607DC1F /* Pods-GuessTheMovieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheMovieTests.debug.xcconfig"; path = "Target Support Files/Pods-GuessTheMovieTests/Pods-GuessTheMovieTests.debug.xcconfig"; sourceTree = "<group>"; };
 		66B3E52CF793E37ABAC13BC9 /* Pods_GuessTheMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuessTheMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -571,11 +572,11 @@
 		04F00378275F70A8006AC82C /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				04F00392275F70A8006AC82C /* ARConfigurations.swift */,
 				04F00379275F70A8006AC82C /* Generated */,
 				04F0037C275F70A8006AC82C /* Repository */,
 				04F0037E275F70A8006AC82C /* Validation Rules */,
 				04F00386275F70A8006AC82C /* Network */,
-				04F00392275F70A8006AC82C /* ARConfigurations.swift */,
 				04F00393275F70A8006AC82C /* Utils */,
 				04F00395275F70A8006AC82C /* UserService */,
 				04F00397275F70A8006AC82C /* Persistance */,
@@ -667,6 +668,7 @@
 			isa = PBXGroup;
 			children = (
 				04F00394275F70A8006AC82C /* MoneyTransformer.swift */,
+				04F00483275F7760006AC82C /* Dynamic.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -882,6 +884,7 @@
 				03A78CBA265E6D100096CF58 /* Sources */,
 				03A78CBB265E6D100096CF58 /* Frameworks */,
 				03A78CBC265E6D100096CF58 /* Resources */,
+				EDD5A09C532CCA17147FF5AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -969,7 +972,6 @@
 				03A78CCE265E6D120096CF58 /* LaunchScreen.storyboard in Resources */,
 				04F003FB275F70A8006AC82C /* SF-Pro-Rounded-Bold.otf in Resources */,
 				04F00479275F757A006AC82C /* Main.storyboard in Resources */,
-				04F0046D275F70A8006AC82C /* Info.plist in Resources */,
 				04F00440275F70A8006AC82C /* Localizables.strings in Resources */,
 				04F003FD275F70A8006AC82C /* Poppins-Bold.ttf in Resources */,
 				04F003F8275F70A8006AC82C /* SFProRounded-Bold.otf in Resources */,
@@ -1049,6 +1051,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GuessTheMovieTests/Pods-GuessTheMovieTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EDD5A09C532CCA17147FF5AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuessTheMovie/Pods-GuessTheMovie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuessTheMovie/Pods-GuessTheMovie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GuessTheMovie/Pods-GuessTheMovie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1097,6 +1116,7 @@
 				04F00445275F70A8006AC82C /* UIImageView+Extensions.swift in Sources */,
 				04F00411275F70A8006AC82C /* TextView.swift in Sources */,
 				04F0047E275F75D1006AC82C /* MainViewController.swift in Sources */,
+				04F00484275F7760006AC82C /* Dynamic.swift in Sources */,
 				04F0045B275F70A8006AC82C /* UIControlTarget+Combine.swift in Sources */,
 				04F00453275F70A8006AC82C /* UIImageView+Publisher.swift in Sources */,
 				04F00426275F70A8006AC82C /* Adapter.swift in Sources */,
@@ -1356,12 +1376,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GuessTheMovie/Core/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.i0sa.GuessTheMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1376,12 +1398,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GuessTheMovie/Core/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.i0sa.GuessTheMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

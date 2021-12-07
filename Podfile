@@ -9,7 +9,9 @@ end
 target 'GuessTheMovie' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  pod 'SPIndicator'
+  pod 'Alamofire'
+  
   # Pods for GuessTheMovieTests
 
   target 'GuessTheMovieTests' do
