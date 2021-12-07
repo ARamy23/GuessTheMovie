@@ -6,13 +6,13 @@ def testing_pods
     pod 'SnapshotTesting'
 end
 
-target 'ARamy' do
+target 'GuessTheMovie' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for ARamy
+  # Pods for GuessTheMovieTests
 
-  target 'ARamyTests' do
+  target 'GuessTheMovieTests' do
     inherit! :search_paths
     testing_pods
   end

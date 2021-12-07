@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		03A78CCE265E6D120096CF58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A78CCC265E6D120096CF58 /* LaunchScreen.storyboard */; };
 		03A78CD9265E6D120096CF58 /* GuessTheMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A78CD8265E6D120096CF58 /* GuessTheMovieTests.swift */; };
-		03A78CE4265E6D120096CF58 /* GuessTheMovieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A78CE3265E6D120096CF58 /* GuessTheMovieUITests.swift */; };
 		04F003ED275F70A8006AC82C /* UILocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F00339275F70A7006AC82C /* UILocalization.swift */; };
 		04F003EE275F70A8006AC82C /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0033A275F70A7006AC82C /* Dimensions.swift */; };
 		04F003EF275F70A8006AC82C /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0033B275F70A7006AC82C /* Configurations.swift */; };
@@ -149,13 +148,6 @@
 			remoteGlobalIDString = 03A78CBD265E6D100096CF58;
 			remoteInfo = GuessTheMovie;
 		};
-		03A78CE0265E6D120096CF58 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 03A78CB6265E6D100096CF58 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 03A78CBD265E6D100096CF58;
-			remoteInfo = GuessTheMovie;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -164,9 +156,6 @@
 		03A78CD4265E6D120096CF58 /* GuessTheMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessTheMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A78CD8265E6D120096CF58 /* GuessTheMovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheMovieTests.swift; sourceTree = "<group>"; };
 		03A78CDA265E6D120096CF58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		03A78CDF265E6D120096CF58 /* GuessTheMovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessTheMovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		03A78CE3265E6D120096CF58 /* GuessTheMovieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheMovieUITests.swift; sourceTree = "<group>"; };
-		03A78CE5265E6D120096CF58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03A78CF7265E6D950096CF58 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		04F00339275F70A7006AC82C /* UILocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILocalization.swift; sourceTree = "<group>"; };
 		04F0033A275F70A7006AC82C /* Dimensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimensions.swift; sourceTree = "<group>"; };
@@ -320,13 +309,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		03A78CDC265E6D120096CF58 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -335,7 +317,6 @@
 			children = (
 				03A78CC0265E6D100096CF58 /* GuessTheMovie */,
 				03A78CD7265E6D120096CF58 /* GuessTheMovieTests */,
-				03A78CE2265E6D120096CF58 /* GuessTheMovieUITests */,
 				03A78CBF265E6D100096CF58 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -345,7 +326,6 @@
 			children = (
 				03A78CBE265E6D100096CF58 /* GuessTheMovie.app */,
 				03A78CD4265E6D120096CF58 /* GuessTheMovieTests.xctest */,
-				03A78CDF265E6D120096CF58 /* GuessTheMovieUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -362,19 +342,11 @@
 		03A78CD7265E6D120096CF58 /* GuessTheMovieTests */ = {
 			isa = PBXGroup;
 			children = (
+				04F0046F275F71D3006AC82C /* Modules */,
 				03A78CD8265E6D120096CF58 /* GuessTheMovieTests.swift */,
 				03A78CDA265E6D120096CF58 /* Info.plist */,
 			);
 			path = GuessTheMovieTests;
-			sourceTree = "<group>";
-		};
-		03A78CE2265E6D120096CF58 /* GuessTheMovieUITests */ = {
-			isa = PBXGroup;
-			children = (
-				03A78CE3265E6D120096CF58 /* GuessTheMovieUITests.swift */,
-				03A78CE5265E6D120096CF58 /* Info.plist */,
-			);
-			path = GuessTheMovieUITests;
 			sourceTree = "<group>";
 		};
 		03A78CF6265E6D950096CF58 /* Data Model */ = {
@@ -826,6 +798,13 @@
 			path = Playground;
 			sourceTree = "<group>";
 		};
+		04F0046F275F71D3006AC82C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -864,24 +843,6 @@
 			productReference = 03A78CD4265E6D120096CF58 /* GuessTheMovieTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		03A78CDE265E6D120096CF58 /* GuessTheMovieUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 03A78CEE265E6D120096CF58 /* Build configuration list for PBXNativeTarget "GuessTheMovieUITests" */;
-			buildPhases = (
-				03A78CDB265E6D120096CF58 /* Sources */,
-				03A78CDC265E6D120096CF58 /* Frameworks */,
-				03A78CDD265E6D120096CF58 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				03A78CE1265E6D120096CF58 /* PBXTargetDependency */,
-			);
-			name = GuessTheMovieUITests;
-			productName = GuessTheMovieUITests;
-			productReference = 03A78CDF265E6D120096CF58 /* GuessTheMovieUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -895,10 +856,6 @@
 						CreatedOnToolsVersion = 12.0;
 					};
 					03A78CD3265E6D120096CF58 = {
-						CreatedOnToolsVersion = 12.0;
-						TestTargetID = 03A78CBD265E6D100096CF58;
-					};
-					03A78CDE265E6D120096CF58 = {
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = 03A78CBD265E6D100096CF58;
 					};
@@ -926,7 +883,6 @@
 			targets = (
 				03A78CBD265E6D100096CF58 /* GuessTheMovie */,
 				03A78CD3265E6D120096CF58 /* GuessTheMovieTests */,
-				03A78CDE265E6D120096CF58 /* GuessTheMovieUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -953,13 +909,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		03A78CD2265E6D120096CF58 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		03A78CDD265E6D120096CF58 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1101,14 +1050,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		03A78CDB265E6D120096CF58 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				03A78CE4265E6D120096CF58 /* GuessTheMovieUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1116,11 +1057,6 @@
 			isa = PBXTargetDependency;
 			target = 03A78CBD265E6D100096CF58 /* GuessTheMovie */;
 			targetProxy = 03A78CD5265E6D120096CF58 /* PBXContainerItemProxy */;
-		};
-		03A78CE1265E6D120096CF58 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 03A78CBD265E6D100096CF58 /* GuessTheMovie */;
-			targetProxy = 03A78CE0265E6D120096CF58 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1348,46 +1284,6 @@
 			};
 			name = Release;
 		};
-		03A78CEF265E6D120096CF58 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R4K5UGWX64;
-				INFOPLIST_FILE = GuessTheMovieUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.i0sa.GuessTheMovieUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GuessTheMovie;
-			};
-			name = Debug;
-		};
-		03A78CF0265E6D120096CF58 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R4K5UGWX64;
-				INFOPLIST_FILE = GuessTheMovieUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.i0sa.GuessTheMovieUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GuessTheMovie;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1414,15 +1310,6 @@
 			buildConfigurations = (
 				03A78CEC265E6D120096CF58 /* Debug */,
 				03A78CED265E6D120096CF58 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		03A78CEE265E6D120096CF58 /* Build configuration list for PBXNativeTarget "GuessTheMovieUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				03A78CEF265E6D120096CF58 /* Debug */,
-				03A78CF0265E6D120096CF58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
