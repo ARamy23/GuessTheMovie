@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -138,6 +138,7 @@
 		04F0046C275F70A8006AC82C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F003E8275F70A8006AC82C /* SceneDelegate.swift */; };
 		04F0046D275F70A8006AC82C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04F003E9275F70A8006AC82C /* Info.plist */; };
 		04F0046E275F70A8006AC82C /* PlaygroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F003EB275F70A8006AC82C /* PlaygroundViewController.swift */; };
+		04F00471275F72A4006AC82C /* GuessTheMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F00470275F72A4006AC82C /* GuessTheMovieTests.swift */; };
 		859EEB71C4871121A2276CBC /* Pods_GuessTheMovieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CB0636321D3870D4309086 /* Pods_GuessTheMovieTests.framework */; };
 		BD419AF16EC9448B3DB72EAA /* Pods_GuessTheMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B3E52CF793E37ABAC13BC9 /* Pods_GuessTheMovie.framework */; };
 /* End PBXBuildFile section */
@@ -294,6 +295,7 @@
 		04F003E8275F70A8006AC82C /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04F003E9275F70A8006AC82C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GuessTheMovie/Core/Info.plist; sourceTree = SOURCE_ROOT; };
 		04F003EB275F70A8006AC82C /* PlaygroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundViewController.swift; sourceTree = "<group>"; };
+		04F00470275F72A4006AC82C /* GuessTheMovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheMovieTests.swift; sourceTree = "<group>"; };
 		3DB813D934D4A7B8D31570F1 /* Pods-GuessTheMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheMovie.debug.xcconfig"; path = "Target Support Files/Pods-GuessTheMovie/Pods-GuessTheMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		575B38D0B6736B110607DC1F /* Pods-GuessTheMovieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheMovieTests.debug.xcconfig"; path = "Target Support Files/Pods-GuessTheMovieTests/Pods-GuessTheMovieTests.debug.xcconfig"; sourceTree = "<group>"; };
 		66B3E52CF793E37ABAC13BC9 /* Pods_GuessTheMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuessTheMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -813,6 +815,7 @@
 		04F0046F275F71D3006AC82C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				04F00470275F72A4006AC82C /* GuessTheMovieTests.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -834,7 +837,6 @@
 				575B38D0B6736B110607DC1F /* Pods-GuessTheMovieTests.debug.xcconfig */,
 				F12AC17D13691BF5A96FDDAB /* Pods-GuessTheMovieTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -1146,6 +1148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F00471275F72A4006AC82C /* GuessTheMovieTests.swift in Sources */,
 				03A78CD9265E6D120096CF58 /* GuessTheMovieTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
