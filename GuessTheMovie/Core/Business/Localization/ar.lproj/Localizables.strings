@@ -1,0 +1,63 @@
+/*
+  Localization.strings
+  ARamy
+
+  Created by Ahmed Ramy on 30/10/2021.
+  
+*/
+
+"add_post_caption_placeholder" = "اكتب شرحا...";
+"add_post_form_navigation_bar_post_button" = "بريد";
+"add_post_navigation_title" = "أضف منشورا";
+"add_post_no_photo_permission_given_error_message" = "إذن مكتبة الصور مفقود ، لتتمكن من إضافة منشور ، تحتاج إلى السماح به من تطبيق إعدادات iOS";
+"add_post_privacy_edit_privacy_title" = "تعديل الخصوصية";
+"add_post_privacy_friends_title" = "اصحاب";
+"add_post_privacy_public_title" = "عام";
+"add_post_privacy_validation_error_no_modifier_selected" = "يبدو أنك لم تحدد معدِّل الخصوصية";
+"add_post_validation_error_video_longer_than_max_duration" = "لا يمكن أن يكون الفيديو أطول من٪ @ ثانية";
+"At least 2 chars" = "حرفان على الأقل";
+"At least 3 chars" = "3 أحرف على الأقل";
+"burger_menu_title_add_new_post" = "أضف منشور جديد";
+"burger_menu_title_bag" = "شنطة";
+"burger_menu_title_calendar" = "التقويم";
+"burger_menu_title_developer_mode" = "وضع المطور";
+"burger_menu_title_look_tracker" = "نظرة تعقب";
+"burger_menu_title_my_qr_code" = "رمز الاستجابة السريعة الخاص بي";
+"burger_menu_title_notifications" = "إشعارات";
+"burger_menu_title_parties" = "حفلات";
+"burger_menu_title_scan_qr" = "مسح QR";
+"burger_menu_title_send_gift" = "أرسل هدية";
+"burger_menu_title_shop_together" = "تسوق معا";
+"burger_menu_title_wardrobe" = "خزانة الثياب";
+"clear cache" = "مسح ذاكرة التخزين المؤقت";
+"Continue as guest" = "تواصل كضيف";
+"email already exists" = "يوجد حساب بالفعل يستخدم هذا البريد الإلكتروني";
+"email already exists while using social" = "يبدو أنك قمت بالتسجيل في هذا البريد الإلكتروني باستخدام كلمة مرور لا تستخدم حساب التواصل الاجتماعي الخاص بك ، يرجى كتابة هذا البريد الإلكتروني وكلمة المرور في الحقول أعلاه";
+"email need verification" = "تحتاج إلى التحقق من حسابك ، يرجى التحقق من صندوق الوارد الخاص بك";
+"email_not_valid" = "البريد الإلكتروني المعطى غير صالح ، هل يمكنك التحقق منه مرة أخرى؟";
+"Home" = "الصفحة الرئيسية";
+"home_caption_tagged_people" = "الأشخاص الذين تم وضع علامة عليهم:٪ @";
+"home_social_buy_button_subtitle" = "يشتري";
+"Letters & numbers only" = "حروف وأرقام فقط";
+"Letters only" = "حروف فقط";
+"logout" = "تسجيل خروج";
+"Me" = "أنا";
+"Messages" = "رسائل";
+"No internet connection" = "لا يوجد اتصال بالإنترنت";
+"no symbols in username" = "لا يمكن أن يحتوي اسم المستخدم على رموز";
+"Password mismatch" = "كلمة المرور غير متطابقة";
+"phone already exists" = "يوجد حساب بالفعل يستخدم رقم الهاتف هذا";
+"Please enter at least 5 characters and at least 1 number" = "الرجاء إدخال 5 أحرف على الأقل ورقم واحد على الأقل";
+"Please enter correct email address" = "رجاء، أدخل عنوان البريد الإلكتروني الصحيح";
+"register_success_message" = "تم تسجيل حسابك بنجاح ، الآن يمكنك تسجيل الدخول.";
+"Search" = "بحث";
+"Some Thing Went Wrong" = "هناك خطأ ما";
+"Trends" = "اتجاهات";
+"username_already_exists" = "يوجد حساب يستخدم اسم المستخدم هذا بالفعل ، يرجى استخدام اسم مستخدم مختلف.";
+"userName_doesnt_exists" = "اسم المستخدم غير موجود.";
+"whitespace in username" = "لا يمكن أن يحتوي اسم المستخدم على مسافات بيضاء";
+"hi_there" = "مرحبا!";
+"my_name" = "ادعي أحمد رامي, و انا ممتن انك وجدت هذا المشروع!";
+"ramy_s_d_k" = "انت الأن تشهد مدي قوة الSDK الخاصة بي";
+"purpose" = "التي بنيتها و الDX و السرعة في المقام الأول";
+"continue" = "أكمل";

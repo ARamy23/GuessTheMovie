@@ -1,0 +1,29 @@
+{
+  "images" : [
+    {
+      "filename" : "light_background.svg",
+      "idiom" : "universal",
+      "language-direction" : "left-to-right"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "dark_background.svg",
+      "idiom" : "universal",
+      "language-direction" : "left-to-right"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "auto-scaling" : "auto",
+    "preserves-vector-representation" : true,
+    "template-rendering-intent" : "original"
+  }
+}
